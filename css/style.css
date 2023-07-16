@@ -20,6 +20,7 @@
 
 body {
     font-family: 'Castoro', serif;
+    font-size: var(--fs_2);
     line-height: 1.5;
 }
 
@@ -29,65 +30,96 @@ img {
 }
 
 .container {
-    width: 1280px;
+    width: 1296px;
     margin: 0 auto;
 }
 
-/*header區域*/
-.header {
-    padding-top: 160px;
-    font-size: var(--h1);
-    letter-spacing: 10px;
-}
-
-.header img {
-    width: 636px;
-    margin: 0 auto;
-}
-
-.header h2 {
-    text-align: end;
-}
-
-/*introduction區域*/
-.introduction {
-    background-color: var(--lightgray);
+/*文字大小設定*/
+.text-m {
     font-size: var(--fs_1);
-    padding: 48px 0;
 }
 
-.introduction p {
-    width: 636px;
+.text-normal {
+    font-size: var(--fs_2);
+    line-height: 1.5;
+    text-decoration: none;
+    color: var(--black);
+}
+
+/*margin設定*/
+.mx-auto {
+    margin: 0 auto;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.ml-auto {
     margin-left: auto;
 }
 
-/*content區域*/
-.content {
-    padding-top: 80px;
+.mt-160 {
+    margin-top: 160px;
 }
 
-.text {
-    width: 636px;
-    margin-right: auto;
-}
-
-.content h3 {
-    font-size: var(--h2);
-    color: var(--red);
-    border-bottom: 3px solid var(--red);
-    margin-bottom: 16px;
-}
-
-.info a {
-    text-decoration: none;
-    display: block;
-    color: var(--black);
-    font-size: var(--fs_2);
+.mb-8 {
     margin-bottom: 8px;
 }
 
-.name, .education, .work {
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-40 {
     margin-bottom: 40px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-160 {
+    margin-bottom: 160px;
+}
+
+/*padding設定*/
+.py-48 {
+    padding: 48px 0;
+}
+
+/*header區域*/
+.title-1 {
+    font-size: var(--h1);
+    letter-spacing: 0.12em;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.image {
+    width: 636px;
+}
+
+/*introduction區域*/
+.bg-gray {
+    background-color: var(--lightgray);
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/*content區域*/
+.title-red {
+    font-size: var(--h2);
+    color: var(--red);
+    border-bottom: 3px solid var(--red);
 }
 
 .year {
@@ -96,35 +128,21 @@ img {
     font-style: italic;
 }
 
-.place {
-    font-size: var(--fs_2);
-    margin-bottom: 16px;
-}
-
-.awards {
-    margin-bottom: 160px;
-}
-
-.awards ul li {
-    font-size: var(--fs_2);
-    margin-bottom: 12px;
+.text-normal:hover {
+    text-decoration: underline;
 }
 
 /*footer區域*/
 .footer {
-    background-color: black;
+    background-color: var(--black);
     padding: 64px 0;
+    text-align: center;
 }
 
-.icon {
-    /*display: flex;
-    justify-content: center;*/
-    width: 320px;
-    margin: 0 auto;
-}
-
-.icon img {
+.footer-item {
     display: inline-block;
-    width: 64px;
-    margin: 0 20px;
+}
+
+.footer-item:hover {
+    opacity: .8;
 }
